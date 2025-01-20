@@ -33,7 +33,7 @@ const About = () => {
               <div className="card h-100 shadow">
                 <div className="text-center pt-4">
                   <img 
-                    src="D pic.jpeg"
+                    src="Divyanshi.jpeg"
                     alt="Divyanshi"
                     className="rounded-circle mb-3"
                     style={{ width: '128px', height: '128px', objectFit: 'cover' }}
