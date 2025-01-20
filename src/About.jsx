@@ -55,13 +55,13 @@ const About = () => {
                 <div className="text-center pt-4">
                   <img 
                     src="Akhil.jpeg"
-                    alt="Akhil"
+                    alt="Akhil Raghav"
                     className="rounded-circle mb-3"
                     style={{ width: '128px', height: '128px', objectFit: 'cover' }}
                   />
                 </div>
                 <div className="card-body text-center">
-                  <h3 className="card-title">Akhil</h3>
+                  <h3 className="card-title">Akhil Raghav</h3>
                   <p className="card-text">
                     Driving the vision and strategy of Health Sahayak to transform healthcare 
                     accessibility across communities.
