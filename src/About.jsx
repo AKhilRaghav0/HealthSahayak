@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div className="min-vh-100">
       {/* Header Section */}
-      <header className="bg-primary text-white py-5 text-center">
+      <header className="bg-primary text-white py-5 text-center mt-5">
         <h1 className="display-4 fw-bold">About Health Sahayak</h1>
         <p className="lead">Your Partner in Real-Time Health Care Services</p>
       </header>
@@ -132,7 +132,7 @@ const About = () => {
                     </div>
                     <div className="mb-3">
                       <label className="form-label">Rating</label>
-                      <div className="d-flex gap-2 fs-4">
+                      <div className="d-flex gap-5 fs-4">
                         {[1, 2, 3, 4, 5].map((star) => (
                           <button 
                             key={star} 

@@ -33,7 +33,7 @@ const HeroSection = () => {
   };
 
   return (
-    <div style={{ position: 'relative', overflow: 'hidden', width: '100%', height: '100vh' }}>
+    <div className="hero-section" style={{ position: 'relative', overflow: 'hidden', width: '100%', height: '100vh' }}>
       {/* Video Background */}
       <video
   autoPlay

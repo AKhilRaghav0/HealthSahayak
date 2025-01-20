@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import './Header.css'
-// import About from './About';
-// import SignIn from './SignIn';
+import { Link } from 'react-router-dom';
+import './Header.css';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -16,19 +15,18 @@ const Header = () => {
   }, []);
 
   return (
-    <>
     <header className={`fixed-top ${isScrolled ? 'header-scrolled' : ''}`}>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container">
           {/* Logo */}
-          <a className="navbar-brand d-flex align-items-center" href="#">
+          <Link className="navbar-brand d-flex align-items-center" to="/">
             <img
               src="Untitled design.png"
               alt="HealthSahayak"
               className="logo-img me-2"
             />
             <span className="brand-text">HealthSahayak</span>
-          </a>
+          </Link>
 
           {/* Mobile Toggle Button */}
           <button
@@ -47,34 +45,37 @@ const Header = () => {
           <div className="collapse navbar-collapse justify-content-between" id="navbarContent">
             <ul className="navbar-nav me-auto mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link active" href="HeroSection.jsx">Home</a>
+                <Link className="nav-link" to="/">
+                  Home
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="Features.jsx">HealthCare Services</a>
+                <Link className="nav-link" to="/">
+                  HealthCare Services
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#"><i className="fa-solid fa-droplet" style={{color: '#d51010'}}></i> Available Blood Bank</a>
+                <Link className="nav-link" to="/">
+                  <i className="fa-solid fa-droplet" style={{color: '#d51010'}}></i> Available Blood Bank
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="About.jsx">About Us</a>
+                <Link className="nav-link" to="/about">
+                  About Us
+                </Link>
               </li>
             </ul>
 
             <div className="d-flex align-items-center">
-              <a href="SignIn.jsx" className="btn btn-outline-primary">
+              <Link to="/signin" className="btn btn-outline-primary">
                 Sign Up
-              </a>
+              </Link>
             </div>
           </div>
         </div>
       </nav>
     </header>
-    
-{/* <About/>
-<SignIn/> */}
-    </>
   );
 };
-
 
 export default Header;

@@ -1,23 +1,36 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Header from './Header';
-import HeroSection from './HeroSection';
 import About from './About';
-// import Features from './Features';
 import SignIn from './SignIn';
+import HeroSection from './HeroSection';
+import FeaturesSection from './Features';
+import Ticker from './Ticker';
+import ActionSection from './ActionSection';
+import Footer from './Footer';
+import HealthcareChatbot from './HealthcareChatbot';
 
 function App() {
   return (
-    <Router>
-      <Header />
+    <>
+      <Header /> {/* Navbar will be shown on all pages */}
       <Routes>
-        {/* <Route path="/" element={<Home/>} /> */}
-        <Route path="/Home" element={<HeroSection />} />
-        {/* <Route path="/HealthCare Services" element={<Features />} /> */}
+        <Route 
+          path="/" 
+          element={
+            <>
+              <HeroSection />
+              <FeaturesSection />
+              <Ticker />
+              <ActionSection />
+              <Footer />
+              <HealthcareChatbot />
+            </>
+          } 
+        />
         <Route path="/About" element={<About />} />
         <Route path="/SignIn" element={<SignIn />} />
       </Routes>
-    </Router>
+    </>
   );
 }
 
