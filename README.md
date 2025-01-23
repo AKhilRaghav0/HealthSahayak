@@ -1,7 +1,8 @@
 
 # Health Sahayak
+![](Images/1.jpg)
 
-**Health Sahayak** is a centralized platform that simplifies access to critical healthcare resources. Whether you need to find a nearby blood bank or a hospital, Health Sahayak bridges the gap in healthcare accessibility by providing real-time assistance through an intuitive interface.
+**Health Sahayak** is a centralized platform simplifying access to critical healthcare resources. Whether you need to find a nearby blood bank or a hospital, Health Sahayak bridges the gap in healthcare accessibility by providing real-time assistance through an intuitive interface.
 
 ---
 
@@ -25,29 +26,6 @@
 
 ---
 
-## Installation
-
-1. **Clone the Repository:**
-   ```bash
-   git clone https://github.com/your-username/health-sahayak.git
-   ```
-
-2. **Navigate to the Project Directory:**
-   ```bash
-   cd health-sahayak
-   ```
-
-3. **Install Dependencies:**
-   ```bash
-   npm install
-   ```
-
-4. **Start the Application:**
-   ```bash
-   npm start
-   ```
-
----
 
 ## How It Works
 
@@ -59,7 +37,7 @@
 
 ## Future Enhancements
 
-- **Real-Time Blood Availability:** Integration with live tracking of blood stock in banks.
+- **Real-Time Blood Availability:** Integration with live tracking of bloodstock in banks.
 - **Ambulance Services:** Provide users with direct access to ambulance services.
 - **Multilingual Support:** Expand chatbot functionality to support multiple languages.
 - **Mobile App:** Develop a dedicated mobile application for enhanced accessibility.
@@ -90,16 +68,5 @@ Contributions are welcome! To contribute:
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
-
----
-
-## Contact
-
-For any queries or suggestions, feel free to reach out:
-
-- **Email:** your-email@example.com
-- **GitHub:** [your-username](https://github.com/your-username)
-
----
 
 **Health Sahayak: Your Healthcare Companion**
